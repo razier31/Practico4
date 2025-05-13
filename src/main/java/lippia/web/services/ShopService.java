@@ -1,7 +1,10 @@
 package lippia.web.services;
 
 import com.crowdar.core.actions.ActionManager;
+import com.crowdar.core.actions.WebActionManager;
 import org.testng.Assert;
+
+import static lippia.web.constants.SuperiorNavigationBarConstants.HTML_LINK;
 
 public class ShopService {
 
@@ -10,5 +13,9 @@ public class ShopService {
 
     public static void verifyPage() {
         Assert.assertTrue( ActionManager.waitPresence( FILTER_BY_PRICE_LABEL ).isDisplayed() );
+    }
+
+    public static void tapHTML() {
+        WebActionManager.click(HTML_LINK);
     }
 }

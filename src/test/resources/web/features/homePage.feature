@@ -1,7 +1,6 @@
 Feature: Home page
 
-  @Nico
-  Scenario: Pagina shop
-    Given Ingreso a la pagina de practica
-    When Realizo click en shop
-    Then Se muestra la pagina de shop
+  @Smoke
+  Scenario: Home sliders Check
+    Given The client is in home page
+    Then The client can view only 3 sliders

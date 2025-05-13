@@ -1,7 +1,8 @@
-Feature: Definir
+Feature: Shop
 
-  @Smoke
-  Scenario: Definir
-    Given The client is in google page
+  @Smoke @Do
+  Scenario: Category functionality
+    Given The client is in home page
     When The client tap on Shop menu
-    Then The client see Filter By Price
+    And The client tap on HTML product category
+    Then The client can view only that particular product
